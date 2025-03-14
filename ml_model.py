@@ -36,6 +36,6 @@ def train_stock_model(data):
 def predict_stock_price(model, latest_data):
     """Predicts the next day's closing price using the trained model."""
     if model and not latest_data.empty:
-        X_latest = latest_data[["Open", "High", "Low", "Volume"]].iloc[-1:].values
+        X_latest = latest_data[["Open", "High", "Low", "Volume"]].iloc[-1:]  # Keep it as DataFrame
         return model.predict(X_latest)[0]
     return None
