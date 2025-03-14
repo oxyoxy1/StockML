@@ -2,7 +2,7 @@ import yfinance as yf
 
 def get_stock_list():
     """Returns a list of popular stock tickers."""
-    return ["AAPL", "GOOGL", "TSLA", "AMZN", "META", "NVDA"]
+    return ["AAPL", "AMZN", "BON", "DOCU", "GOOGL", "META", "MSTR", "NVDA", "QBTS", "RBRK", "RGTI", "TSLA"]
 
 def fetch_stock_data(ticker, period="12mo"):
     """Fetches historical stock data for a given ticker."""
