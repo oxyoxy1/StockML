@@ -50,7 +50,7 @@ def run_main_program():
 def create_menu():
     """Creates the main menu GUI using tkinter."""
     root = tk.Tk()
-    root.title("Ticker Program Menu")
+    root.title("StockML -oxy")
     
     # Set window size and color
     root.geometry("300x300")
@@ -61,19 +61,19 @@ def create_menu():
     root.iconphoto(True, icon)
 
     # Title Label with customized font and color
-    title_label = tk.Label(root, text="Welcome to Ticker Program", bg=BACKGROUND_COLOR, font=TITLE_FONT, fg=TEXT_COLOR)
+    title_label = tk.Label(root, text="Welcome!", bg=BACKGROUND_COLOR, font=TITLE_FONT, fg=TEXT_COLOR)
     title_label.pack(pady=20)
 
-    # Button to run tickers.py script
-    edit_button = tk.Button(root, text="Edit Tickers", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=run_tickers_script)
-    edit_button.pack(pady=10)
-
     # Button to run the main program
-    run_button = tk.Button(root, text="Run Main Program", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=run_main_program)
+    run_button = tk.Button(root, text="Run", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=run_main_program)
     run_button.pack(pady=10)
 
+    # Button to run tickers.py script
+    edit_button = tk.Button(root, text="Add Tickers", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=run_tickers_script)
+    edit_button.pack(pady=10)
+
     # Button to purge tickers
-    purge_button = tk.Button(root, text="Purge Tickers", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=purge_tickers)
+    purge_button = tk.Button(root, text="Remove ALL Tickers", font=BUTTON_FONT, bg=BUTTON_COLOR, fg=BUTTON_TEXT_COLOR, command=purge_tickers)
     purge_button.pack(pady=10)
 
     # Run the GUI loop
