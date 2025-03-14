@@ -24,7 +24,7 @@ A Python-based program that analyzes stock tickers, visualizes stock data, and p
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ticker-program.git
+   git clone https://github.com/oxyoxy1/StockML.git
 
 2. Install the required dependencies:
    ```bash
