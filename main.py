@@ -28,7 +28,9 @@ def display_predictions(predictions):
     else:
         print("\nNo predictions were made.")
 
-def main():
+def run_main_program():
+    """Runs the main program (existing functionality)"""
+    print("Running main program...")
     try:
         print("Fetching stock list...")
         tickers = get_stock_list()
@@ -63,4 +65,4 @@ def main():
     input("Press Enter to exit...")  # Keeps window open
 
 if __name__ == "__main__":
-    main()
+    run_main_program()
